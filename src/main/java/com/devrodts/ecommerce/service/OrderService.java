@@ -18,5 +18,18 @@ public class OrderService {
     private final OrderMapper ordermapper;
 
 
-    public OrderService(OrderRepository orderRepository, UserRepository userRepository, ProductRepository productRepository, CategoryRepository categoryRepository, OrderMapper orderMapper)
+    public OrderService(
+            OrderRepository orderRepository,
+            UserRepository userRepository,
+            ProductRepository productRepository,
+            CategoryRepository categoryRepository,
+            OrderMapper orderMapper,
+            OrderRepository orderReposity,
+            UserRepository userRepository,
+            ProductRepository productRepository,
+            CategoryRepository categoryRepository
+    ){
+        this.categoryRepository = categoryRepository;
+
+    }
 }
