@@ -6,6 +6,6 @@ import com.devrodts.ecommerce.entity.UserEntity;
 
 
 public interface UserMapper {
-    UserResponseDTO toResponse(UserEntity user);
+    UserResponseDTO toResponse(User user);
     UserEntity toEntity(UserRequestDTO userRequest0);
 }
